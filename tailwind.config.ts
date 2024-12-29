@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily:{
+        Gilroy: ['Gilroy', 'Gilroy-light', 'Gilroy-medium', 'Gilroy-bold'],
+      }
     },
   },
   plugins: [],

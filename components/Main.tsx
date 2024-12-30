@@ -71,7 +71,7 @@ export default function MainPage() {
           >
             <Image 
               className="object-cover z-0 " 
-              src="/3.jpg"
+              src="/IMG1.jpg"
               alt="why is this not working"
               width={500}
               height={200}
@@ -86,7 +86,7 @@ export default function MainPage() {
           >
             <Image 
               className="object-cover z-0 " 
-              src="/IMG1.jpg"
+              src="/3.jpg"
               alt="why is this not working"
               width={500}
               height={200}

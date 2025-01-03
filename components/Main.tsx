@@ -118,7 +118,7 @@ export default function MainPage() {
             duration: 1,
             ease: easeInOut,
           }}
-          className="text-[170px] "
+          className="text-[10vw] "
         >
           HELLO, I'M
         </motion.h1>
@@ -131,7 +131,7 @@ export default function MainPage() {
             duration: 0.8,
             ease: easeInOut,
           }}
-          className="text-[170px] ml-56"
+          className="text-[10vw] ml-56"
         >
           RAUNAK
         </motion.h1>
@@ -144,7 +144,7 @@ export default function MainPage() {
             duration: 0.8,
             ease: easeInOut,
           }}
-          className="text-[170px] ml-96"
+          className="text-[10vw] ml-80"
         >
           JIJOTIA
         </motion.h1>

@@ -1,8 +1,93 @@
+"use client";
+import gsap from "gsap";
+import Image from "next/image";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
+import MyDetails from "./MyDetails";
+
 export default function AboutPage() {
-    return (
-        <div className="bg-black h-screen w-full text-white">
-            <h1>About Page</h1>
-            <p>This is the about page</p>
-        </div>
-    )
+  const border1 = useRef(null);
+  const text1 = useRef(null);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const TimeLine = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: "320px",
+        end: "415px",
+        scrub: 1,
+      },
+    });
+
+    TimeLine.from(border1.current, {
+      width: "0%",
+      ease: "linear",
+    });
+
+    TimeLine.from(text1.current, {
+      opacity: 0,
+      y: 300,
+      duration: 2.5,
+      ease: "power1.in",
+      delay: -2,
+    });
+
+    const TimeLine2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: "737px",
+        end: "813px",
+        scrub: 1,
+      },
+    });
+    const TimeLine3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: "930px",
+        end: "1000px",
+        markers: true,
+        scrub: 1,
+      },
+    });
+
+    TimeLine2.to(text1.current, {
+      opacity: 0,
+      y: -100,
+      duration: 2.5,
+      ease: "power1.in",
+    });
+
+    TimeLine2.to(border1.current, {
+      width: 0,
+      ease: "linear",
+      delay: 2,
+    });
+  }, []);
+
+  return (
+    <div className="bg-black h-screen w-full text-white relative">
+      <div className="overflow-hidden absolute top-[-26%] ">
+        <h1 ref={text1} className="text-[8vw] ml-24 overflow-hidden">
+          About ME
+        </h1>
+      </div>
+      <div ref={border1} className="w-full h-[.5px] bg-white"></div>
+
+      <div className="top-48 bg-slate-400 w-[50%] h-[70%] flex justify-center items-center left-[45%] absolute ">
+        <MyDetails />
+      </div>
+
+      <div className=" absolute top-40 left-[7%] ">
+        <Image
+          className="object-cover "
+          src="/IMG4.jpg"
+          alt="why is this not working"
+          width={550}
+          height={200}
+        />
+      </div>
+    </div>
+  );
 }

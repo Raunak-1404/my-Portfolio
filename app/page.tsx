@@ -1,6 +1,7 @@
 'use client';
 import AboutPage from "@/components/AboutPage";
 import Frontpage from "@/components/Frontpage";
+import NextPAge from "@/components/NextPAge";
 import { div } from "framer-motion/client";
 import Image from "next/image";
 import { useEffect } from "react";
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <Frontpage/>
       <AboutPage/>
+      <NextPAge />
     </>
   );
 }

@@ -8,6 +8,7 @@ import MyDetails from "./MyDetails";
 export default function AboutPage() {
   const border1 = useRef(null);
   const text1 = useRef(null);
+  const techStack = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -47,7 +48,6 @@ export default function AboutPage() {
         trigger: document.documentElement,
         start: "930px",
         end: "1000px",
-        markers: true,
         scrub: 1,
       },
     });
@@ -64,6 +64,13 @@ export default function AboutPage() {
       ease: "linear",
       delay: 2,
     });
+
+    TimeLine3.from(techStack.current, {
+      opacity: 0,
+      scale: 0,
+      duration: 3,
+      ease: "none",
+    });
   }, []);
 
   return (
@@ -75,11 +82,12 @@ export default function AboutPage() {
       </div>
       <div ref={border1} className="w-full h-[.5px] bg-white"></div>
 
-      <div className="top-48 bg-slate-400 w-[50%] h-[70%] flex justify-center items-center left-[45%] absolute ">
+      <div className="top-48 w-[50%] h-[70%] flex justify-center items-center left-[45%] absolute ">
         <MyDetails />
       </div>
 
-      <div className=" absolute top-40 left-[7%] ">
+      {/* Add here the TechStack  */}
+      <div ref={techStack} className=" absolute top-32 left-[7%] ">
         <Image
           className="object-cover "
           src="/IMG4.jpg"

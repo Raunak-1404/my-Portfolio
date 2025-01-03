@@ -18,7 +18,6 @@ export default function MyDetails () {
             trigger: document.documentElement,
             start: "930px",
             end: "1000px",
-            markers: true,
             scrub: 1,
           },
         });
@@ -56,11 +55,11 @@ export default function MyDetails () {
       }, []);
 
     return (
-        <div className="w-[85%] text-white text-[3.5vw] absolute flex flex-col justify-center overflow-hidden ">
-            <p ref={para1}>Hello, I am Raunak Jijotia.</p>
-            <p ref={para2}>A passionated Software Engineer, Full Stack,</p>
-            <p ref={para3}>Devops Developer who Loves to create and</p>
-            <p ref={para4}>manage real life good projects.</p>
+        <div className="w-[95%] text-center text-white text-[3.2vw] absolute flex flex-col justify-center overflow-hidden ">
+            <p ref={para1}>Hello, I’m Raunak Jijotia.</p>
+            <p ref={para2}>A passionate Software Engineer skilled in</p>
+            <p ref={para3}>Full-Stack Development and DevOps, committed to creating, designing and delivering</p>
+            <p ref={para4}>projects that solves real-world challenges.</p>
         </div>
     )
 }

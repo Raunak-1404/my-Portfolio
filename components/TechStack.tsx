@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion";
 
-const TechStackImage = [
+const TechStackImage : string[] = [
     '/stack/Bash.svg',
     '/stack/Bootstrap.svg',
     '/stack/CSS.png',
@@ -30,7 +30,7 @@ const TechStackImage = [
     '/stack/prisma-2.svg',
     '/stack/python-5.svg',
     '/stack/postgresql.svg',
-]
+];
 
 export default function TechStack() {
     return (
@@ -39,12 +39,16 @@ export default function TechStack() {
                 return (
                     <TechImage key={index} img={img}/>
                 )
-            })}
+            })};
         </>
     )
-}
+};
 
-function TechImage (img:any) {
+type TechImageProps = {
+    img: string
+};
+
+function TechImage (img:TechImageProps) {
     
     return (
         <motion.div

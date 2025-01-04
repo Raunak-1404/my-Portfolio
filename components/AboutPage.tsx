@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import MyDetails from "./MyDetails";
+import TechStack from "./TechStack";
 
 export default function AboutPage() {
   const border1 = useRef(null);
@@ -87,15 +88,10 @@ export default function AboutPage() {
       </div>
 
       {/* Add here the TechStack  */}
-      <div ref={techStack} className=" absolute top-32 left-[7%] ">
-        <Image
-          className="object-cover "
-          src="/IMG4.jpg"
-          alt="why is this not working"
-          width={550}
-          height={200}
-        />
+      <div ref={techStack} className=" absolute top-32 left-[5%] flex flex-wrap gap-8 items-center  h-[77.7vh] w-[36vw] justify-center">
+          <TechStack />
       </div>
     </div>
   );
 }
+

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import TopHeader from "./Top-Header";
 import MainPage from "./Main";
 

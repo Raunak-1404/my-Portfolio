@@ -15,7 +15,8 @@ export default {
 
       fontFamily:{
         Gilroy: ['Gilroy', 'Gilroy-light', 'Gilroy-medium', 'Gilroy-bold'],
-      }
+      },
+
     },
   },
   plugins: [],

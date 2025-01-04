@@ -39,7 +39,7 @@ export default function TechStack() {
                 return (
                     <TechImage key={index} img={img}/>
                 )
-            })};
+            })}
         </>
     )
 };

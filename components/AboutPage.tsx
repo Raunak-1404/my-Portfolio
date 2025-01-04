@@ -47,8 +47,8 @@ export default function AboutPage() {
     const TimeLine3 = gsap.timeline({
       scrollTrigger: {
         trigger: document.documentElement,
-        start: "930px",
-        end: "1000px",
+        start: "920px",
+        end: "990px",
         scrub: 1,
       },
     });

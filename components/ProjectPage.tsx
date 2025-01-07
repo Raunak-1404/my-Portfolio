@@ -50,19 +50,19 @@ export default function ProjectPage() {
     <div className="w-[100%] h-[104.8vh] bg-black relative" ref={divref}>
       <img
         ref={img1}
-        src="/IMG1.jpg"
+        src="/Project1.png"
         alt=""
         className="w-[100%] h-[100vh] object-cover absolute top-0 left-0 z-20"
       />
       <img
         ref={img2}
-        src="/IMG2.jpg"
+        src="/pixelcut-export.png"
         alt=""
         className="w-[100%] h-[100vh] object-cover absolute top-0 left-0 z-10"
       />
       <img
         ref={img3}
-        src="/IMG3.jpg"
+        src="/Project7.png"
         alt=""
         className="w-[100%] h-[100vh] bg-black object-cover absolute top-10 left-0"
       />

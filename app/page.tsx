@@ -1,5 +1,6 @@
 'use client';
 import AboutPage from "@/components/AboutPage";
+import ContactUSPage from "@/components/ContactUsPage";
 import Frontpage from "@/components/Frontpage";
 import ProjectPage from "@/components/ProjectPage";
 
@@ -23,7 +24,7 @@ export default function Home() {
       <AboutPage/>
       <ProjectPage />
       
-      <div className="w-[99vw] h-screen bg-red-500"></div>
+      <ContactUSPage />
     </>
   );
 }

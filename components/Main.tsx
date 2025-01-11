@@ -106,6 +106,10 @@ export default function MainPage() {
 
   }, []);
 
+
+
+
+
   return (
     <motion.div className="h-[89.8%] w-full text-white relative  tracking-[1px] ">
       <motion.div className="absolute top-[38%] leading-[.9] left-[20%] z-50">

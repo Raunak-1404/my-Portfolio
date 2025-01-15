@@ -11,7 +11,7 @@ export default function ContactMe() {
     const profiles : Profile[]  = [
         {
             name: "LinkedIn",
-            link: "https://https://www.linkedin.com/in/raunak-jijotia-666938252/",
+            link: "https://www.linkedin.com/in/raunak-jijotia-666938252/",
             img: "/stack/icons8-linkedin (1).svg"
         },
 

@@ -164,7 +164,7 @@ export default function MainPage() {
         >
           <Image
             className="object-cover z-0 "
-            src="/IMG4.jpg"
+            src="/myimg.jpg"
             alt="why is this not working"
             width={500}
             height={200}

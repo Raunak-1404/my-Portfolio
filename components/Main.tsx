@@ -124,7 +124,7 @@ export default function MainPage() {
           }}
           className="text-[10vw] "
         >
-          HELLO, I'M
+          HELLO, I&#39;M
         </motion.h1>
         <motion.h1
         ref={text2}

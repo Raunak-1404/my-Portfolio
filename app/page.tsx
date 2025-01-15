@@ -11,7 +11,8 @@ export default function Home() {
 
   async function SCROLL () {
     const LocomotiveScroll = (await import('locomotive-scroll')).default;
-    const locomotiveScroll = new LocomotiveScroll(); 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const _locomotiveScroll = new LocomotiveScroll(); 
   }
 
   useEffect(()=> {

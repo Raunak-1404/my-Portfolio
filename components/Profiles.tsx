@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { easeInOut, motion } from "framer-motion";
 import { useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";

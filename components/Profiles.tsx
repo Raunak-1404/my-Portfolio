@@ -2,14 +2,11 @@ import Link from "next/link";
 import { easeInOut, motion } from "framer-motion";
 import { useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 export default function Profiles(props: {
-  profile: { name: string; link: string };
+  profile: { name: string; link: string, img:string };
 }) {
-  // const h1Variants = {
-  //   hover: { x: -4500, transition: { duration: 20, easeInOut }, animate:{ y: 0, opacity: 1 } }, // Adjust x value as needed
-  // };
 
-  const divref1 = useRef(null);
   const divValue = useRef(null);
 
   const function1 = () => {
@@ -31,6 +28,8 @@ export default function Profiles(props: {
       duration: 0.7,
       ease: "none",
     });
+
+
   };
 
   const onMouseEnterHandler = () => {
@@ -45,10 +44,10 @@ export default function Profiles(props: {
     <div
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
-      className=" border-[1px] text-white w-[49%] overflow-hidden  mx-auto h-[45vh] rounded-3xl px-7 pt-3 relative"
+      className=" border-[1px] text-white w-[40%] overflow-hidden  mx-auto h-[45vh] rounded-3xl px-7 pt-3 relative  "
     >
       <Link
-        className="flex flex-col h-full justify-between   "
+        className="flex flex-col h-full justify-between "
         href={props.profile.link}
       >
         <div className="flex justify-between text-[1.3vw] pt-2">
@@ -56,40 +55,12 @@ export default function Profiles(props: {
           <p>Li</p>
         </div>
 
-        <div>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-          <h1>{props.profile.name}</h1>
-        </div>
+        <Image 
+          src={props.profile.img}
+          height={170}
+          width={170}
+          alt="icon"
+        />
 
         <div ref={divValue} className="flex justify-between text-[1.3vw] mb-4">
           <p>{props.profile.name}</p>

@@ -57,7 +57,7 @@ function TechImage (img:TechImageProps) {
         className="object-cover">
             <Image 
                 src = {img.img}
-                width={100}
+                width={90}
                 height={10}
                 alt="Tech Stack"
                 quality={100}

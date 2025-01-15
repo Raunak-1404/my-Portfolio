@@ -16,8 +16,8 @@ export default function MyDetails () {
         const TimeLine = gsap.timeline({
           scrollTrigger: {
             trigger: document.documentElement,
-            start: "920px",
-            end: "990px",
+            start: "850px",
+            end: "900px",
             scrub: 1,
           },
         });

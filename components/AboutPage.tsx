@@ -47,9 +47,10 @@ export default function AboutPage() {
     const TimeLine3 = gsap.timeline({
       scrollTrigger: {
         trigger: document.documentElement,
-        start: "920px",
-        end: "990px",
+        start: "850px",
+        end: "900px",
         scrub: 1,
+        
       },
     });
 
@@ -88,7 +89,7 @@ export default function AboutPage() {
       </div>
 
       {/* Add here the TechStack  */}
-      <div ref={techStack} className=" absolute top-32 left-[5%] flex flex-wrap gap-8 items-center  h-[77.7vh] w-[36vw] justify-center">
+      <div ref={techStack} className=" absolute top-[6%] left-[5%] flex flex-wrap gap-8 items-center  h-[73.7vh] w-[36vw] justify-center">
           <TechStack />
       </div>
     </div>

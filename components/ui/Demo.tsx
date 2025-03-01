@@ -59,7 +59,7 @@ export function SplineSceneBasic() {
           onClick={() => window.open("https://github.com/Raunak-1404/Medium-Blog/", "_blank")}
         >
           <img
-            src="/project/medium.png"
+            src="/project/Medium.png"
             alt="Medium"
             className="h-full w-full object-cover object-left rounded-xl"
           />

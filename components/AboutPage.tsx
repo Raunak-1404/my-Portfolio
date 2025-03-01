@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import MyDetails from "./MyDetails";
 import TechStack from "./TechStack";
+import { Spotlight } from "@/components/ui/SpotLight";
+
 
 export default function AboutPage() {
   const border1 = useRef(null);
@@ -75,6 +77,7 @@ export default function AboutPage() {
   }, []);
 
   return (
+    
     <div className="bg-black h-screen w-full text-white relative">
       <div className="overflow-hidden absolute top-[-26%] ">
         <h1 ref={text1} className="text-[8vw] ml-24 overflow-hidden">

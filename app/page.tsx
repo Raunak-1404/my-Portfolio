@@ -4,7 +4,6 @@ import ContactUSPage from "@/components/ContactUsPage";
 import Frontpage from "@/components/Frontpage";
 import ProjectPage from "@/components/ProjectPage";
 
-
 import { useEffect } from "react";
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
       <Frontpage/>
       <AboutPage/>
       <ProjectPage />
-      
       <ContactUSPage />
     </>
   );

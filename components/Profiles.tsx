@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import { useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -44,10 +44,11 @@ export default function Profiles(props: {
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
       className=" border-[1px] text-white w-[40%] overflow-hidden  mx-auto h-[45vh] rounded-3xl px-7 pt-3 relative  "
+      onClick={() => window.open(props.profile.link, "_blank")}
     >
-      <Link
+      <div
         className="flex flex-col h-full justify-between "
-        href={props.profile.link}
+        
       >
         <div className="flex justify-between text-[1.3vw] pt-2">
           <p>{props.profile.name}</p>
@@ -65,7 +66,7 @@ export default function Profiles(props: {
           <p>{props.profile.name}</p>
           <p>Li</p>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

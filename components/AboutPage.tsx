@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import MyDetails from "./MyDetails";
 import TechStack from "./TechStack";
-import { Spotlight } from "@/components/ui/SpotLight";
+
 
 
 export default function AboutPage() {
